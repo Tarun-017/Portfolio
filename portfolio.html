@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <!-- <link rel="Portfolio" href="portfolio.css"> -->
+     <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <style>
+    <!-- <style>
         * {
             margin: 0;
             padding: 0;
@@ -61,6 +61,7 @@
             justify-content: space-around;
             align-items: center;
             margin: 80px 0;
+            padding: 2% 0;
         }
 
         .firstSection>div {
@@ -70,6 +71,18 @@
         .leftSection {
             width: 34px;
             font-size: 3rem;
+        }
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+        .leftSection .btn{
+            padding: 12px;
+            background-color: brown;
+            color: aquamarine;
+            border: 2px solid white;
+            border-radius: 20px;
+            font-size: 20px;
+            cursor: pointer;
         }
 
         .rightSection img {
@@ -85,11 +98,70 @@
         #element {
             color: blueviolet;
         }
-        .secondsection{
+
+        .secondsection {
             max-width: 80vw;
             margin: auto;
         }
-    </style>
+
+        /* ===== ABOUT =====*/
+        .AboutSection {
+            background-color: rgb(44, 31, 15);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 5.3% 0;
+        }
+
+        .AboutSection>div {
+            width: 30%;
+            font-size: larger;
+        }
+
+        .About_leftSection {
+            width: 34px;
+            font-size: 3rem;
+        }
+
+        .About_leftSection>h2 {
+            padding: 5% 0;
+        }
+
+        .About_rightSection img {
+            width: 85%;
+            margin: 80px 0px;
+            align-items: center;
+        }
+
+        /* ===== SKILL =====*/
+        .skillSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+            padding: 1% 0;
+        }
+
+        .skillSection>div {
+            width: 30%;
+            font-size: larger;
+        }
+
+        .skill_rightSection {
+            width: 34px;
+            font-size: 3rem;
+        }
+
+        .skill_leftSection>h2 {
+            padding: 5% 0;
+        }
+
+        .skill_rightSection img {
+            width: 85%;
+            margin: 80px 0px;
+            align-items: center;
+        }
+    </style> -->
 </head>
 
 <body>
@@ -109,20 +181,67 @@
     </header>
 
     <main>
+        <!-- ===== Home ===== -->
         <section class="firstSection">
             <div class="leftSection">
                 Hi my name is <span class="purple">Tarun</span>
                 <div>And I am a passinate</div>
                 <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">GitHub</button>
+                    <button class="btn">Linkedin</button>
+                </div>
             </div>
             <div class="rightSection">
                 <img src="qwer.png" alt="">
             </div>
         </section>
-<hr>
-        <section class="secondsection">
-            <h1>About Me...</h1>
+        <hr>
+        <!--===== ABOUT =====-->
+        <section class="AboutSection">
+            <div class="About_rightSection">
+                <img src="qwer.png" alt="">
+            </div>
+
+            <div class="About_leftSection">
+                <h2>About Me....</h2>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia eum enim id fugiat assumenda
+                    itaque at consequuntur rerum. Doloribus tempora minus provident debitis. Unde fugiat sint aut minus
+                    voluptates est, temporibus soluta vitae quod delectus ut expedita ab eligendi enim rem quisquam
+                    quibusdam odit repellendus atque? Quibusdam, quia quae? </div>
+            </div>
         </section>
+<hr>
+        <!-- ===== Skills ===== -->
+        <section class="skillSection">
+            <div class="skill_leftSection">
+                <h2>SKILLS....</h2>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia eum enim id fugiat assumenda
+                    itaque at consequuntur rerum. Doloribus tempora minus provident debitis. Unde fugiat sint aut minus
+                    voluptates est, temporibus soluta vitae quod delectus ut expedita ab eligendi enim rem quisquam
+                    quibusdam odit repellendus atque? Quibusdam, quia quae? </div>
+
+            </div>
+            <div class="skill_rightSection">
+                <img src="qwer.png" alt="">
+            </div>
+        </section>
+<hr>
+        <!--===== Projects =====-->
+        <section class="AboutSection">
+            <div class="About_rightSection">
+                <img src="qwer.png" alt="">
+            </div>
+
+            <div class="About_leftSection">
+                <h2>Projects</h2>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia eum enim id fugiat assumenda
+                    itaque at consequuntur rerum. Doloribus tempora minus provident debitis. Unde fugiat sint aut minus
+                    voluptates est, temporibus soluta vitae quod delectus ut expedita ab eligendi enim rem quisquam
+                    quibusdam odit repellendus atque? Quibusdam, quia quae? </div>
+            </div>
+        </section>
+<hr>
     </main>
     <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
