@@ -149,3 +149,75 @@ nav ul li a:hover {
     margin: 80px 0px;
     align-items: center;
 }
+
+/* Contact section styles */
+.contect {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 5% 0;
+}
+
+h1 {
+    border-bottom: 2px solid wheat;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 2%;
+}
+
+form {
+    width: 400px ;
+    margin: 0 auto;
+    align-items: center;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+textarea {
+    height: 150px;
+}
+
+button {
+    padding: 12px;
+    background-color: brown;
+    color: aquamarine;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* ===== FOOTER =====*/
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgb(78, 53, 16);
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+  
+  
+ 
