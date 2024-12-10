@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(84, 145, 201);
+    color: white;
+    font-family: "Poppins", sans-serif;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(119, 54, 54);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav ul li a:hover {
+    color: rgb(0, 0, 0);
+    font-size: 1.02rem;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+    padding: 2% 0;
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+.leftSection {
+    width: 34px;
+    font-size: 3rem;
+}
+
+.leftSection .buttons {
+    padding: 50px 0;
+}
+
+.leftSection .btn {
+    padding: 12px;
+    background-color: brown;
+    color: aquamarine;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.rightSection img {
+    width: 85%;
+    margin: 80px 0px;
+    align-items: center;
+}
+
+.purple {
+    color: blueviolet;
+}
+
+#element {
+    color: blueviolet;
+}
+
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+}
+
+/* ===== ABOUT =====*/
+.AboutSection {
+    background-color: rgb(44, 31, 15);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5.3% 0;
+}
+
+.AboutSection>div {
+    width: 30%;
+    font-size: larger;
+}
+
+.About_leftSection {
+    width: 34px;
+    font-size: 3rem;
+}
+
+.About_leftSection>h2 {
+    padding: 5% 0;
+}
+
+.About_rightSection img {
+    width: 85%;
+    margin: 80px 0px;
+    align-items: center;
+}
+
+/* ===== SKILL =====*/
+.skillSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+    padding: 1% 0;
+}
+
+.skillSection>div {
+    width: 30%;
+    font-size: larger;
+}
+
+.skill_rightSection {
+    width: 34px;
+    font-size: 3rem;
+}
+
+.skill_leftSection>h2 {
+    padding: 5% 0;
+}
+
+.skill_rightSection img {
+    width: 85%;
+    margin: 80px 0px;
+    align-items: center;
+}
