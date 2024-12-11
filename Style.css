@@ -195,7 +195,15 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-.skill-box:hover > .skill-title::after, .skill-box:hover, .skill-title::before{
+.skill-box:hover > .skill-title::after{
+    width: 35px;
+}
+
+.skill-box:hover > .skill-title::before{
+    width: 35px;
+}
+
+.skill-box:hover > .skill-box:hover{
     width: 35px;
 }
 
