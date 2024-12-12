@@ -118,18 +118,19 @@ nav ul li a:hover::before {
 }
 
 .cta-btn {
-    background-color: #333;
+    background-color: #33333300;
     color: rgb(252, 255, 231);
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    border: 1px solid rgb(252, 255, 231);
+    border: 2px solid rgb(252, 255, 231);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.616);
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .cta-btn:hover {
-    background-color: rgb(102, 67, 67);
+    background-color: rgba(48, 45, 45, 0.374);
     transform: scale(1.05);
 }
 
