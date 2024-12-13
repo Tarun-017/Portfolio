@@ -22,10 +22,10 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: transparent;
     padding: 15px 0;
     transition: background-color 0.3s ease-in-out;
     z-index: 10;
+    background: transparent;
 }
 
 header.sticky {
@@ -45,35 +45,30 @@ header.sticky {
 .portfolio-name {
     font-size: 24px;
     font-weight: bold;
-    color: rgb(255, 249, 236);
+    color: #fff;
 }
 
-nav ul {
-    list-style: none;
+nav {
     display: flex;
     gap: 20px;
 }
 
-nav ul li {
-    position: relative;
-}
-
-nav ul li a {
-    color: rgb(255, 249, 236);
+nav a {
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
     padding-bottom: 5px;
-    display: inline-block;
     transition: color 0.3s ease-in-out;
+    text-align: right;
 }
 
-nav ul li a:hover {
+nav a:hover {
     color: #ff6347;
 }
 
 /* Underline effect */
-nav ul li a::before {
+nav a::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -86,11 +81,39 @@ nav ul li a::before {
     transition: transform 0.4s ease-in-out;
 }
 
-nav ul li a:hover::before {
+nav a:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger div {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.active div:nth-child(1) {
+    transform: rotate(45deg) translateY(7px);
+}
+
+.hamburger.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg) translateY(-7px);
+}
 
 /* Hero Section */
 #home {
@@ -219,6 +242,7 @@ nav ul li a:hover::before {
     height: 4px;
     width: 100px;
     background-color: #e6fff0;
+    border-radius: 2px;
 }
 
 .Containers {
@@ -326,8 +350,9 @@ nav ul li a:hover::before {
 #portfolio {
     background-color: #e2e2e2;
     padding: 50px 0;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 6%;
+    margin-bottom: 0px;
 }
 
 .container {
@@ -401,7 +426,7 @@ nav ul li a:hover::before {
 #contact form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 62%;
     margin: 0 auto;
     text-align: left;
 }
