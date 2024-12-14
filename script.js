@@ -1,16 +1,16 @@
-// Get the navbar element
+// Navigation Bar Element
 const navbar = document.getElementById('navbar');
 
-// When the user scrolls, execute the function
 window.onscroll = function () {
-  // Check if the page has been scrolled more than 50px
-  if (window.scrollY > 25) {
-    navbar.classList.add('sticky'); // Add class to change background color
-  } else {
-    navbar.classList.remove('sticky'); // Remove class to keep it transparent
+  if (window.scrollY > 50){
+    navbar.classList.add('sticky'); 
+  } 
+  else {
+    navbar.classList.remove('sticky'); 
   }
 };
 
+// Hamburger logo
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('nav');
 
@@ -19,6 +19,7 @@ hamburger.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
 
+// Contect Input Element
 document.getElementById('contact-form').addEventListener('submit', function (e) {
   e.preventDefault();
 
@@ -28,9 +29,9 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
 
   if (name && email && message) {
     alert(`Message sent successfully!\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
-    // Reset the form
     e.target.reset();
-  } else {
+  } 
+  else {
     alert("Please fill out all fields.");
   }
 });
