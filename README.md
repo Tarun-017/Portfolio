@@ -5,21 +5,21 @@ This website is a dynamic, responsive portfolio page featuring multiple sections
 
 Technologies Used: 
 1. HTML (HyperText Markup Language): 
-  o Used to structure the content of the webpage. 
+o Used to structure the content of the webpage. 
   o Includes semantic tags for different sections (e.g., <nav>, <header>, <section>, <footer>). 
   o Form elements for the contact form (e.g., <input>, <textarea>, <button>). 
 
-2. CSS (Cascading Style Sheets): 
+3. CSS (Cascading Style Sheets): 
   o Used for styling the layout, including colors, typography, spacing, and positioning. 
   o Flexbox and Grid Layout for responsive design and proper element positioning. 
   o Media queries for adapting the layout to different screen sizes. 
   o Custom animations like the sticky navbar effect and scroll-triggered reveals. 
 
-3. JavaScript: 
+4. JavaScript: 
   o Handles interactivity on the page, including the sticky navigation bar, hamburger menu, form validation, and scroll animations. 
   o Uses the IntersectionObserver API for implementing scroll reveal animations, which enhances performance by observing visibility without constant event listeners. 
 
-4. Responsive Design: 
+5. Responsive Design: 
   o Mobile-first approach with the use of media queries to ensure the website adapts to various screen sizes, from desktop to mobile (e.g., changing the navbar layout, resizing text, adjusting grid structure). 
   o The navigation menu is hidden on mobile devices and toggled via a hamburger menu. 
 
