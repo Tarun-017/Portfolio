@@ -35,3 +35,25 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     alert("Please fill out all fields.");
   }
 });
+
+
+// Scrole reveal Animation
+document.addEventListener("DOMContentLoaded", () => {
+  const revealElements = document.querySelectorAll('.reveal');
+
+  const observer = new IntersectionObserver(
+      (entries, observer) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('visible');
+                  observer.unobserve(entry.target); // Stop observing once visible
+              }
+          });
+      },
+      { threshold: 0.1 } // Trigger when 10% of the element is visible
+  );
+
+  revealElements.forEach(el => observer.observe(el));
+});
+
+
