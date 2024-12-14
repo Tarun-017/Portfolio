@@ -1,0 +1,186 @@
+/* =====Navigation Bar Media Section===== */
+@media (max-width: 768px) {
+    .cont {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+        width: 25%;
+        background-color: rgb(102, 67, 67);
+        position: absolute;
+        top: 80px;
+        right: 10px;
+        padding: 10px 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a .sticky{
+        background: rgb(102, 67, 67);
+        box-shadow: 0 2px 5px rgb(0, 0, 0);
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width: 470px) {
+    .cont {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .portfolio-name {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+    #about{
+        flex-direction: column;
+    }
+    .About_leftSection {
+        padding: 0 1px;
+    }
+    #about>div{
+        width: 95%;
+    }
+}
+
+/* =====Hero(home) Section===== */
+@media (max-width: 768px){
+    .hero-content h1{
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 460px){
+    .hero-content h1{
+        font-size: 1.8rem;
+    }
+}
+
+/* =====About Section Media===== */
+@media (max-width: 768px){
+    #about{
+        flex-direction: column;
+    }
+    #about>div{
+        text-align: center;
+    }
+    .About_leftSection {
+        padding: 0 1px;
+    }
+    #about>div{
+        width: 95%;
+        align-items: center;
+    }
+    .About_rightSection img{
+        margin: 0 0;
+    }
+    .About_leftSection>h2{
+        text-align: center;
+    }
+    .buttons{
+        padding: 15px 0;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 470px) {
+    #about{
+        flex-direction: column;
+        padding: 0;
+        padding-top: 5%;
+    }
+    .About_rightSection img{
+        width: 100%;
+        padding: 5%;
+    }
+    .About_leftSection {
+        padding: 0 1px;
+    }
+    #about>div{
+        width: 95%;
+    }
+}
+
+
+/* =====skill section media===== */
+@media screen and (max-width: 990px){
+    .Containers{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+}
+@media screen and (max-width: 650px){
+    .Containers{
+        grid-template-columns: 1fr;
+        padding: 0 4px;
+        grid-gap: 2px;
+    }
+    #skills {
+        padding: 0;
+    }
+    .inner {
+        padding-bottom: 40px;
+    }
+    .skill-box{
+        padding: 2px 15px;
+    }
+    .skill-box p{
+        font-size: 16px;
+    }
+    .skill-title h3{
+        font-size: large;
+    }
+}
+
+/* =====Portfolio Section Media===== */
+@media (max-width: 660px) {
+    .portfolio-grid{
+        gap: 0%;
+    }
+    #portfolio h2{
+        font-size: 1.8rem;
+    }
+}
+
+/* =====Contact Section Media===== */
+@media (max-width: 560px){
+    #contact form{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #contact h2{
+        font-size: 1.5rem;
+    }
+
+    #contact {
+        padding: 43% 0;
+        padding-top: 15%;
+        height: auto;
+    }
+}
+    
