@@ -5,7 +5,7 @@ This website is a dynamic, responsive portfolio page featuring multiple sections
 
 Technologies Used: 
 1. HTML (HyperText Markup Language): 
-o Used to structure the content of the webpage. 
+  o Used to structure the content of the webpage. 
   o Includes semantic tags for different sections (e.g., <nav>, <header>, <section>, <footer>). 
   o Form elements for the contact form (e.g., <input>, <textarea>, <button>). 
 
